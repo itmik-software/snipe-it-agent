@@ -21,15 +21,17 @@ C:\ProgramData\Device Sync for Snipe-IT\agentsettings.json
 
 The plain MSI installs application files and registers the service. It does not prompt for secrets, write configuration, or start the service by itself.
 
-## Intune deployment
+## Windows Intune deployment
 
-Use the supplied `intune/install.intunewin` package and the deployment settings documented by your organization's Intune administrator. Do not rebuild or repackage it from source. Supply tenant-specific configuration through your approved protected deployment process.
+Use the Windows Intune Win32 app workflow and the deployment settings documented by your organization's Intune administrator. Supply tenant-specific configuration through your approved protected deployment process.
 
 For a test deployment, verify the service, configuration path, local log, and resulting Snipe-IT asset on one device before expanding the assignment.
 
 ## macOS
 
 Use the supplied `installers/DeviceSyncForSnipeIt.dmg`. Open the setup application, provide the Snipe-IT URL and token, and approve the administrator prompt. The installed configuration is stored under `/Library/Application Support/DeviceSyncForSnipeIt/`.
+
+For managed Mac fleets, Device Sync for Snipe-IT also supports a macOS Intune shell-script deployment workflow that installs a prepared payload archive.
 
 ## Security note
 

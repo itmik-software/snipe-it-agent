@@ -16,18 +16,18 @@ Common use cases include Snipe-IT computer inventory, Windows asset discovery, m
 - **Less manual asset administration:** discover serial numbers, manufacturers, models, hostnames, operating systems, CPU, memory, disk capacity, and primary MAC addresses from the endpoint.
 - **More reliable ownership context:** detect a matching work-account identity and optionally assign the asset to an existing Snipe-IT user.
 - **Cleaner Snipe-IT records:** find assets by serial number, create missing hardware records when configured, and map endpoint data into Snipe-IT custom fields.
-- **A practical Microsoft rollout:** use the Windows setup installer, MSI, or supplied Intune package for managed deployment.
-- **Mac support without a separate workflow:** sync Mac inventory to Snipe-IT with a macOS installer, launch daemon, and menu-bar control.
+- **Managed deployment options:** deploy Windows endpoints with the setup installer, MSI, and Intune Win32 app workflow; deploy Macs with the DMG or macOS Intune shell-script workflow.
+- **Native macOS support:** sync Mac inventory to Snipe-IT with a macOS installer, launch daemon, and menu-bar control.
 
 ## Choose your deployment
 
 ### Windows workstation or fleet
 
-Download `DeviceSyncForSnipeIT.Setup.exe` for guided setup, or `DeviceSyncForSnipeIT-0.1.38.msi` for installer-managed deployment. For Microsoft-managed fleets, download `install.intunewin` from the release assets and deploy this Snipe-IT Windows agent as a Windows Win32 app.
+Download `DeviceSyncForSnipeIT.Setup.exe` for guided setup, or `DeviceSyncForSnipeIT-0.1.38.msi` for installer-managed deployment. For Microsoft-managed Windows fleets, deploy the agent through the Intune Win32 app workflow.
 
 ### macOS
 
-Download `DeviceSyncForSnipeIt.dmg`, open the setup application, enter your Snipe-IT connection details, and approve the administrator prompt. The installed Snipe-IT macOS agent runs as a launch daemon and supports a menu-bar control for manual sync.
+Download `DeviceSyncForSnipeIt.dmg`, open the setup application, enter your Snipe-IT connection details, and approve the administrator prompt. The installed Snipe-IT macOS agent runs as a launch daemon and supports a menu-bar control for manual sync. For managed Mac fleets, use the macOS Intune shell-script deployment workflow.
 
 ## Quick evaluation
 
@@ -52,7 +52,7 @@ Yes. The agent can find assets by serial number, create missing hardware assets 
 
 ### Can I deploy this Snipe-IT agent with Microsoft Intune?
 
-Yes. The release includes an Intune Win32 app package plus install, uninstall, and detection scripts for managed Windows deployments.
+Yes. Intune deployment is supported for both Windows and macOS. Windows uses the Intune Win32 app workflow; macOS uses an Intune shell script that installs a prepared payload archive.
 
 ### Is this an official Snipe-IT product?
 

@@ -1,11 +1,11 @@
-# Intune Deployment
+# Windows Intune Deployment
 
-Download the supplied `install.intunewin` file from the latest GitHub Release and use it as a Windows Win32 app. This repository distributes the package; it does not publish the source or provide package-build instructions.
+This page covers the Windows Intune Win32 app workflow for Device Sync for Snipe-IT. Intune deployment is also supported for managed Macs through the macOS shell-script workflow; see [macOS deployment](macos-deployment.md).
 
 ## Recommended rollout
 
 1. Create a protected tenant-specific configuration using `config/agentsettings.sample.json`.
-2. Upload `intune/install.intunewin` to Intune.
+2. Package and upload the Windows installer as an Intune Win32 app.
 3. Configure install and uninstall commands according to the package metadata.
 4. Assign the app to a small test device group.
 5. Confirm service status, configuration, local logs, and the Snipe-IT asset.
