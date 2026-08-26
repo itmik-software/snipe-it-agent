@@ -5,7 +5,7 @@
 
 ## Keep Snipe-IT computer inventory accurate without manual asset entry
 
-**Device Sync for Snipe-IT** is a self-hosted Snipe-IT agent for IT teams that use Snipe-IT as their hardware system of record. Install it on Windows PCs or Macs and it collects selected computer inventory details, then creates or updates the matching hardware asset in Snipe-IT.
+**Device Sync for Snipe-IT** is a lightweight Snipe-IT agent for IT teams that use Snipe-IT as their hardware system of record. It runs on Windows PCs and Macs and works with Snipe-IT Cloud, hosted Snipe-IT, and self-hosted Snipe-IT instances. Install it on your endpoints and it collects selected computer inventory details, then creates or updates the matching hardware asset in Snipe-IT.
 
 It is built for the moment after deployment when the asset database starts drifting: laptops are reimaged, users change, models are missing, and nobody wants to ask for a serial number again. Device Sync turns that endpoint information into a repeatable inventory workflow.
 
@@ -17,7 +17,7 @@ Common use cases include Snipe-IT computer inventory, Windows asset discovery, m
 - **More reliable ownership context:** detect a matching work-account identity and optionally assign the asset to an existing Snipe-IT user.
 - **Cleaner Snipe-IT records:** find assets by serial number, create missing hardware records when configured, and map endpoint data into Snipe-IT custom fields.
 - **A practical Microsoft rollout:** use the Windows setup installer, MSI, or supplied Intune package for managed deployment.
-- **A safer pilot path:** inspect inventory, test connectivity, and preview a sync before writing changes to Snipe-IT.
+- **Dry-run validation before rollout:** inspect endpoint inventory, test the Snipe-IT connection, and review the planned create/update before writing changes.
 
 ## Choose your deployment
 

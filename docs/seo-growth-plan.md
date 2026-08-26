@@ -8,7 +8,7 @@ Make Device Sync for Snipe-IT show up when IT admins search for a Snipe-IT agent
 
 Primary message:
 
-Device Sync for Snipe-IT is an independent, self-hosted Snipe-IT agent for Windows and macOS computer inventory. It keeps hardware assets current by syncing serial number, model, hostname, operating system, network details, optional software inventory, custom fields, and user assignment through the Snipe-IT API.
+Device Sync for Snipe-IT is an independent, endpoint-installed Snipe-IT agent for Windows and macOS computer inventory. It works with Snipe-IT Cloud, hosted Snipe-IT, and self-hosted Snipe-IT instances. It keeps hardware assets current by syncing serial number, model, hostname, operating system, network details, optional software inventory, custom fields, and user assignment through the Snipe-IT API.
 
 Short description for GitHub:
 
