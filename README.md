@@ -17,7 +17,7 @@ Common use cases include Snipe-IT computer inventory, Windows asset discovery, m
 - **More reliable ownership context:** detect a matching work-account identity and optionally assign the asset to an existing Snipe-IT user.
 - **Cleaner Snipe-IT records:** find assets by serial number, create missing hardware records when configured, and map endpoint data into Snipe-IT custom fields.
 - **A practical Microsoft rollout:** use the Windows setup installer, MSI, or supplied Intune package for managed deployment.
-- **Dry-run validation before rollout:** inspect endpoint inventory, test the Snipe-IT connection, and review the planned create/update before writing changes.
+- **Mac support without a separate workflow:** sync Mac inventory to Snipe-IT with a macOS installer, launch daemon, and menu-bar control.
 
 ## Choose your deployment
 
