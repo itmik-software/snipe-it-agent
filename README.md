@@ -1,13 +1,15 @@
-# Device Sync for Snipe-IT
+# Snipe-IT Agent for Windows and macOS
 
 [![Latest release](https://img.shields.io/github/v/release/itmik-software/snipe-it-agent?display_name=tag)](https://github.com/itmik-software/snipe-it-agent/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-147a7e)](https://github.com/itmik-software/snipe-it-agent/releases)
 
-## Keep Snipe-IT accurate without manual asset entry
+## Keep Snipe-IT computer inventory accurate without manual asset entry
 
-Device Sync for Snipe-IT is a self-hosted endpoint inventory agent for IT teams that use Snipe-IT as their hardware system of record. Install it on Windows PCs or Macs and it collects selected device details, then creates or updates the matching hardware asset in Snipe-IT.
+**Device Sync for Snipe-IT** is a self-hosted Snipe-IT agent for IT teams that use Snipe-IT as their hardware system of record. Install it on Windows PCs or Macs and it collects selected computer inventory details, then creates or updates the matching hardware asset in Snipe-IT.
 
 It is built for the moment after deployment when the asset database starts drifting: laptops are reimaged, users change, models are missing, and nobody wants to ask for a serial number again. Device Sync turns that endpoint information into a repeatable inventory workflow.
+
+Common use cases include Snipe-IT computer inventory, Windows asset discovery, macOS asset sync, Intune-deployed Snipe-IT automation, endpoint-to-Snipe-IT hardware updates, and replacing one-off PowerShell scripts with a repeatable agent.
 
 ## What it solves
 
@@ -21,11 +23,11 @@ It is built for the moment after deployment when the asset database starts drift
 
 ### Windows workstation or fleet
 
-Download `DeviceSyncForSnipeIT.Setup.exe` for guided setup, or `DeviceSyncForSnipeIT-0.1.38.msi` for installer-managed deployment. For Microsoft-managed fleets, download `install.intunewin` from the release assets and deploy it as a Windows Win32 app.
+Download `DeviceSyncForSnipeIT.Setup.exe` for guided setup, or `DeviceSyncForSnipeIT-0.1.38.msi` for installer-managed deployment. For Microsoft-managed fleets, download `install.intunewin` from the release assets and deploy this Snipe-IT Windows agent as a Windows Win32 app.
 
 ### macOS
 
-Download `DeviceSyncForSnipeIt.dmg`, open the setup application, enter your Snipe-IT connection details, and approve the administrator prompt. The installed agent runs as a launch daemon and supports a menu-bar control for manual sync.
+Download `DeviceSyncForSnipeIt.dmg`, open the setup application, enter your Snipe-IT connection details, and approve the administrator prompt. The installed Snipe-IT macOS agent runs as a launch daemon and supports a menu-bar control for manual sync.
 
 ## Quick evaluation
 
@@ -38,6 +40,24 @@ Start with a test Snipe-IT instance and a least-privilege API token. Use [the co
 
 See [Windows installer configuration](docs/installer-configuration.md), [Intune deployment](docs/intune-deployment-runbook.md), and [macOS deployment](docs/macos-deployment.md).
 
+## Snipe-IT Agent FAQ
+
+### Does Snipe-IT include a built-in computer inventory agent?
+
+Snipe-IT provides a REST API and asset-management workflows, but endpoint inventory automation is usually handled by integrations, scripts, MDM systems, or third-party agents. Device Sync for Snipe-IT is an independent agent that sends selected computer inventory data into Snipe-IT through that API.
+
+### Can this agent automatically add computers to Snipe-IT?
+
+Yes. The agent can find assets by serial number, create missing hardware assets when enabled, update existing assets, resolve models and manufacturers, map custom fields, and optionally assign the asset to a matching Snipe-IT user.
+
+### Can I deploy this Snipe-IT agent with Microsoft Intune?
+
+Yes. The release includes an Intune Win32 app package plus install, uninstall, and detection scripts for managed Windows deployments.
+
+### Is this an official Snipe-IT product?
+
+No. Device Sync for Snipe-IT is an independent open-source integration published by Itmik Software. It is compatible with Snipe-IT, but it is not affiliated with, endorsed by, or sponsored by the Snipe-IT project.
+
 ## Configuration and security
 
 Configuration is supplied for each environment rather than compiled into the application. Use a least-privilege Snipe-IT API token, keep TLS verification enabled, and restrict access to the installed configuration file. The current release uses a long-lived token in local configuration; short-lived enrollment and per-device credential rotation are not yet available. Never commit production credentials or place them in a broadly accessible package.
@@ -46,6 +66,6 @@ Configuration is supplied for each environment rather than compiled into the app
 
 Device Sync for Snipe-IT is an inventory bridge, not an RMM, EDR, patch-management, software-deployment, license-management, or compliance platform. It performs one-way endpoint-to-Snipe-IT updates and does not delete stale assets or provide bidirectional reconciliation.
 
-## Support the project
+## Sponsor Snipe-IT agent development
 
 Device Sync for Snipe-IT is maintained independently by Itmik Software. Donations help fund Windows and macOS compatibility testing, signed releases, documentation, and Snipe-IT API improvements. Support development through [GitHub Sponsors](https://github.com/sponsors/itmik-software), or report installer and configuration problems through [GitHub Issues](https://github.com/itmik-software/snipe-it-agent/issues).
