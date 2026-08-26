@@ -1,0 +1,48 @@
+{
+  "snipeItUrl": "https://snipeit.example.com",
+  "apiToken": "paste-snipe-it-api-token-here",
+  "defaultStatusId": 0,
+  "defaultStatusName": "In Service",
+  "defaultModelId": 0,
+  "models": {
+    "defaultModelId": 0,
+    "defaultCategoryId": 0,
+    "defaultCategoryName": "Laptops",
+    "createMissingModels": true,
+    "createMissingCategories": false,
+    "createMissingManufacturers": true,
+    "modelIdMappings": {}
+  },
+  "assetTagStrategy": "serial",
+  "createMissingAssets": true,
+  "assignToLoggedInUser": true,
+  "service": {
+    "syncIntervalMinutes": 720,
+    "syncOnStart": true,
+    "retryDelayMinutes": 15,
+    "syncOnSoftwareChange": true,
+    "softwareInventoryChangeCheckSeconds": 60
+  },
+  "identity": {
+    "provider": "EntraId",
+    "domain": "example.com",
+    "upnSuffix": "example.com",
+    "lookupMode": "Auto",
+    "preferWindowsWorkAccount": true,
+    "userNameMap": {
+      "localuser": "user@example.com",
+      "HOSTNAME$": "user@example.com",
+      "HOSTNAME$@example.com": "user@example.com"
+    }
+  },
+  "loggedInUserUpnSuffix": "example.com",
+  "userNameMap": {},
+  "verifyTls": true,
+  "defaultAssetNamePrefix": null,
+  "enableSoftwareInventory": true,
+  "customFieldMappings": {},
+  "softwareInventoryCustomFieldName": "Software Inventory",
+  "softwareInventoryCustomFieldDbName": null,
+  "lastSyncedCustomFieldName": "Last Synced",
+  "lastSyncedCustomFieldDbName": null
+}

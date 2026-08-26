@@ -1,0 +1,9 @@
+# Local deployment configuration
+config/agentsettings.json
+intune/agentsettings.json
+intune/install.intunewin
+
+# Local logs and temporary files
+*.log
+*.tmp
+.DS_Store
