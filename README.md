@@ -56,7 +56,7 @@ Yes. Intune deployment is supported for both Windows and macOS. Windows uses the
 
 ### Is this an official Snipe-IT product?
 
-No. Device Sync for Snipe-IT is an independent open-source integration published by Itmik Software. It is compatible with Snipe-IT, but it is not affiliated with, endorsed by, or sponsored by the Snipe-IT project.
+No. Device Sync for Snipe-IT is an independent software integration published by Itmik Software. It is compatible with Snipe-IT, but it is not affiliated with, endorsed by, or sponsored by the Snipe-IT project.
 
 ## Configuration and security
 
@@ -69,3 +69,7 @@ Device Sync for Snipe-IT is an inventory bridge, not an RMM, EDR, patch-manageme
 ## Sponsor Snipe-IT agent development
 
 Device Sync for Snipe-IT is maintained independently by Itmik Software. Donations help fund Windows and macOS compatibility testing, signed releases, documentation, and Snipe-IT API improvements. Support development through [GitHub Sponsors](https://github.com/sponsors/itmik-software), or report installer and configuration problems through [GitHub Issues](https://github.com/itmik-software/snipe-it-agent/issues).
+
+## License
+
+Device Sync for Snipe-IT is proprietary software. This repository does not grant an open-source license to copy, modify, redistribute, or create derivative works from the binaries, scripts, or documentation. Use of released installers is governed by the applicable Itmik Software license terms shown during installation or provided with the release.
