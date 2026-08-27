@@ -27,7 +27,7 @@ Download `DeviceSyncForSnipeIT.Setup.exe` for guided setup, or `DeviceSyncForSni
 
 ### macOS
 
-Download `DeviceSyncForSnipeIt.dmg`, open the setup application, enter your Snipe-IT connection details, and approve the administrator prompt. The installed Snipe-IT macOS agent runs as a launch daemon and supports a menu-bar control for manual sync. For managed Mac fleets, use the macOS Intune shell-script deployment workflow.
+Download [`DeviceSyncForSnipeIt-0.1.1.dmg`](installers/DeviceSyncForSnipeIt-0.1.1.dmg), open the setup application, enter your Snipe-IT connection details, and approve the administrator prompt. The installed Snipe-IT macOS agent runs as a launch daemon and supports a menu-bar control for manual sync. For managed Mac fleets, use the macOS Intune shell-script deployment workflow.
 
 ## Quick evaluation
 

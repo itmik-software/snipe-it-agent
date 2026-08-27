@@ -1,6 +1,6 @@
 # macOS Deployment
 
-Use the supplied `installers/DeviceSyncForSnipeIt.dmg` for hands-on installation. This distribution repository does not include macOS source code or package-building instructions.
+Use the supplied `installers/DeviceSyncForSnipeIt-0.1.1.dmg` for hands-on installation. This distribution repository does not include macOS source code or package-building instructions.
 
 ## Install
 

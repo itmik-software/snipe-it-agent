@@ -29,7 +29,7 @@ For a test deployment, verify the service, configuration path, local log, and re
 
 ## macOS
 
-Use the supplied `installers/DeviceSyncForSnipeIt.dmg`. Open the setup application, provide the Snipe-IT URL and token, and approve the administrator prompt. The installed configuration is stored under `/Library/Application Support/DeviceSyncForSnipeIt/`.
+Use the supplied `installers/DeviceSyncForSnipeIt-0.1.1.dmg`. Open the setup application, provide the Snipe-IT URL and token, and approve the administrator prompt. The installed configuration is stored under `/Library/Application Support/DeviceSyncForSnipeIt/`.
 
 For managed Mac fleets, Device Sync for Snipe-IT also supports a macOS Intune shell-script deployment workflow that installs a prepared payload archive.
 
